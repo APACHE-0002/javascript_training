@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: black;
+        }
+    </style>
+</head>
+<body>
+    
+    <script type="text/javascript">
+
+    var stringOne = "freeCodeCamp is the best place to learn"
+    var stringTwo = "frontend and backend development"
+
+    //charAt() - letter of that position
+    console.log(stringOne.charAt(11))
+
+    //charCodeAt() - keycode
+    console.log(stringOne.charCodeAt(12))
+
+    //concat() - une strings
+    console.log(stringOne.concat(stringTwo))
+
+    //endsWith() - verifica se a string termina com aquela parte de texto
+    console.log(stringOne.endsWith("learn"))
+
+    //fromCharCode() - imprime o caractere daquele keycode
+    console.log(String.fromCharCode(115))
+
+    //includes() - verificar se o texto existe dentro da variavel
+    console.log(stringTwo.includes("end"));
+
+    //indexOf()  - o primeiro end da string
+    console.log(stringTwo.indexOf("end"));
+
+    //lastIndexOf() - o ultimo end da string
+    console.log(stringTwo.lastIndexOf("end"));
+
+    //match() - localiza todos os end da string, e retorna um array[]
+    //pesquisado em regex
+    console.log(stringTwo.match(/end/g));
+
+    //repeat() - repete uma string quantas vezes preferir
+    console.log(stringTwo.repeat(3));
+
+    
+    //replace() - substitui o termo declarado pelo requerido
+    console.log(stringTwo.replace(/end/g, "END"));
+
+    //search() - procura pela posiçao de end, o primeiro que ele encontrar, ira retornar
+    console.log(stringTwo.search("end"));
+
+    //slice() - inicia o paramento na posiçao 2 até a 4, porem só pega o 2 e o 3
+    console.log(stringTwo.slice(2, 4));
+
+    //split() - recorta todos os espaços da string, ou o caractere que preferir
+    console.log(stringTwo.split(" "));
+
+    //startsWith() - verificar se a string inica com free
+    console.log(stringOne.startsWith("free"))
+
+    //substr() - inicia o parametro na posiçao 2, e pega 4 caracteres
+    console.log(stringTwo.substr(2, 4));
+    
+    //substring() - similar ao slice
+    console.log(stringTwo.substring(2, 4));
+
+    //toLowerCase()
+    console.log(stringTwo.toLowerCase());
+
+    //toUpperCase()
+    console.log(stringTwo.toUpperCase());
+
+    //trim() - retira todo o espaçamento da string
+    var stringThree = "      alou      "
+    console.log(stringThree.trim())
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

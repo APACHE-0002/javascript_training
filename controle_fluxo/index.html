@@ -5,13 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+
+    <script>
+        //valores avaliados como falsos
+        // > false, undefined, null, 0, NaN, string vazia("")
+
+        let conta = 10;
+
+function depop(){
+
+    try {
+        // funçao que sera executada, caso nao de certo ira retornar o erro para catch(e)
+            conta = conta + 10a;
+    }
+    catch (e) {
+        /*
+        switch(e){
+            case error_1:
+                executa uma funçao de correçao
+        }
+        */
+    console.log("error: " + e); // passa a exceção para o manipulador de erro -> sua função local.
+    }
+
+}
+console.log("chegou aqui")
+
+
+try {
+  writeMyFile(theData); //Isso pode lançar um erro
+} catch(e) {
+  handleError(e); // Se temos um erro temos que lidar com ele
+} finally {
+  closeMyFile(); // Sempre feche o recurso
+}
+
+    </script>
 </head>
 <body>
     <h1>Controle de Fluxo</h1>
 
+    <button onclick="javascript:depop()">clicado</button>
 
-    <script>
-        
-    </script>
+
+    
 </body>
 </html>

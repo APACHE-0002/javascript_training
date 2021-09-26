@@ -9,8 +9,38 @@
 <body>
     <h1>statements</h1>
 
+
+
     <script>
-        console.log("abobora")
+
+        //break, para o loop
+        for (Count=1; Count<=10; Count++) {
+                if (Count == 6)
+                        break;
+        document.write ("<P>Loop: " + Count + "</P>");
+        }
+
+        //continue, corta aquele loop exato, mas continua no proximo
+        //caso tiver um valor nao requerido dentro de um array
+        for (Count=10; Count<=20; Count++) {
+            if (Count == 16)
+                continue;
+            document.write ("<P>Loop: " + Count + "</P>");
+        }
+
+
+
+        //simplificar a funçao
+        (function myObject (Param1) {
+            this.name = Param1;
+            console.log(this.name);
+            return (this);
+        }("Gordon"));
+        
+      /*  newObj = new myObject ("Gordon");
+        alert (newObj.name);*/
+
+
     </script>
 
 
